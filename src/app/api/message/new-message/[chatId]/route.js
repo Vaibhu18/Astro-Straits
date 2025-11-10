@@ -2,8 +2,6 @@ import dbConnect from "@/lib/dbConnection";
 import chatModel from "@/models/Chat";
 import messageModel from "@/models/Message";
 import { NextResponse } from "next/server";
-import { createGoogleGenerativeAI } from "@ai-sdk/google"
-import { streamText } from "ai"
 
 export async function POST(req, { params }) {
     try {
